@@ -10,7 +10,7 @@ print(py_stud & data_stud)
 
 print(py_stud - data_stud)
 
-print(py_stud  data_stud)
+print(py_stud | data_stud)
 
 course_new = {
   "python": len(py_stud),
@@ -23,5 +23,5 @@ growth = {course: count * 2 for course, count in course_new.items()}
 
 print("expected growth:", growth)
 
-new_dict = {x : str(y) + "fullstack" for x in course_new.items()}
-    print(new_dict)
+new_dict = {course: str(count) + " fullstack" for course, count in course_new.items()}
+print(new_dict)
